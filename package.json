@@ -1,0 +1,33 @@
+{
+  "name": "scivijs",
+  "version": "1.0.0",
+  "description": "Javascript library for 3D-scientific-mesh-data visualization",
+  "main": "src/SciviJS.js",
+  "scripts": {
+    "server": "python -m SimpleHTTPServer",
+    "test": "watchify test/test*.js -o test/bundletest.js -v --debug",
+    "serverTest": "npm run server | npm run test"
+  },
+  "author": "Martin Renou",
+  "license": "ISC",
+  "dependencies": {
+    "binary-search-tree": "^0.2.6",
+    "gl-matrix-mat3": "^2.2.1-npm",
+    "gl-matrix-mat4": "^2.2.1-npm",
+    "gl-matrix-vec3": "^2.2.1-npm",
+    "gl-matrix-vec4": "^2.2.1-npm",
+    "jbinary": "^2.1.3",
+    "object.values": "^1.0.4",
+    "three": "^0.81.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mocha": "^3.1.2",
+    "source-map-support": "^0.4.7",
+    "watchify": "^3.7.0"
+  }
+}
